@@ -8,7 +8,21 @@ double deg2rad(double x){
 double rad2deg(double y){
     return y*180/M_PI;
 }
-double findXComponent(){
+double findXComponent(double l1,double l2,double x, double y){
+    return (l1*cos(x))+(l2*cos(y));
+}
+double findYComponent(double l1,double l2,double x, double y){
+    return (l1*sin(x))+(l2*sin(y));
+}
+double pythagoras(double x,double y){
+    return sqrt(pow(x,2)+pow(y,2));
+}
+void showResult(double x,double y){
+    cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n"; 
+    cout << "Length of the resultant vector = "<< x << endl;
+    cout << "Direction of the resultant vector (deg) = "<< y << endl;
+
+    cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"; 
     
 }
 
